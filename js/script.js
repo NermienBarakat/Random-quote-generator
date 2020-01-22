@@ -90,8 +90,8 @@ const printQuote = () => {
   return html;
 }
 
-/* Quote automatically refresh at regular intervals every 2 seconds*/
-setInterval(printQuote, 3000);
+/* Quote automatically refresh at regular intervals every 10 seconds*/
+setInterval(printQuote, 10000);
 
 /***
  * click event listener for the print quote button
