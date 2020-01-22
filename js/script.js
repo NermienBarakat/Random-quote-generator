@@ -83,7 +83,7 @@ const printQuote = () => {
     html += `<span class="year">${randomQuote.year}</span>`;
   }
   if (randomQuote.tag) {
-    html += `<span class="${Object.keys(randomQuote)[4]} ${randomQuote.tag}"> ( ${randomQuote.tag} )</span>`;
+    html += `<span class="js-tag ${randomQuote.tag}"> ( ${randomQuote.tag} )</span>`;
   }
   document.querySelector('.quote-box').innerHTML = '</p>' + html;
   bgColorChanges();
