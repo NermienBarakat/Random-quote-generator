@@ -1,6 +1,9 @@
 /******************************************
 Nermien barakat
+Click down to review
+https://codepen.io/NermienBarakat/pen/wvBRZxj
 project 1 - A Random Quote Generator
+// I am going after Exceeds Expectations. Thank you 
 ******************************************/
 
 //`quotes` array 
