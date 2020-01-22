@@ -1,2 +1,3 @@
-# a_random_quote_generator-v1
- Random Quotes
+# Random quote generator using Javascript.
+
+ a simple web application using JavaScript.
