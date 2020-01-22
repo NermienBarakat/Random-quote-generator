@@ -1,7 +1,7 @@
 /******************************************
 Nermien barakat
 Click down to review
-https://codepen.io/NermienBarakat/pen/wvBRZxj
+https://codepen.io/NermienBarakat/full/wvBRZxj
 project 1 - A Random Quote Generator
 // I am going after Exceeds Expectations. Thank you 
 ******************************************/
@@ -11,9 +11,7 @@ const quotes = [
   {
     quote: "Atheism is a non-prophet organization.",
     source: "George Carlin",
-    citation: "Unknown",
-    year: "Unknown",
-    tag: "fun"
+    tag: "Fun"
   },
   {
     quote: "Hapiness is not something ready made. It comes from your own actions.",
@@ -52,7 +50,7 @@ const quotes = [
     source: "Patrick McKenzie",
     citation: "Twitter",
     year: "2016",
-    tag: "fun"
+    tag: "Fun"
   }
 
 ];
@@ -66,9 +64,9 @@ const getRandomQuote = () => {
 }
 //Change background color function 
 
-let bgColorChanges =()=> {
-  var randomColor = Math.floor(Math.random()*16777215).toString(16);
-  document.body.style.backgroundColor = "#"+randomColor;
+let bgColorChanges = () => {
+  var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  document.body.style.backgroundColor = "#" + randomColor;
 }
 // Display quote 
 
@@ -78,22 +76,22 @@ const printQuote = () => {
   <p class="quote">${randomQuote.quote}</p>
   <p class="source">${randomQuote.source}`;
 
-if(randomQuote.citation){
-  html += `<span class="citation">${randomQuote.citation}</span>`;
-}
-if(randomQuote.year){
-  html += `<span class="year">${randomQuote.year}</span>`;
-}
-if(randomQuote.tag) {
-  html += `<span class="${Object.keys(randomQuote)[4]} ${randomQuote.tag}"> ( ${randomQuote.tag} )</span>`;
-}
- document.querySelector('.quote-box').innerHTML = '</p>' + html;
- bgColorChanges();
+  if (randomQuote.citation) {
+    html += `<span class="citation">${randomQuote.citation}</span>`;
+  }
+  if (randomQuote.year) {
+    html += `<span class="year">${randomQuote.year}</span>`;
+  }
+  if (randomQuote.tag) {
+    html += `<span class="${Object.keys(randomQuote)[4]} ${randomQuote.tag}"> ( ${randomQuote.tag} )</span>`;
+  }
+  document.querySelector('.quote-box').innerHTML = '</p>' + html;
+  bgColorChanges();
   return html;
 }
 
 /* Quote automatically refresh at regular intervals every 2 seconds*/
-setInterval(printQuote,3000);
+setInterval(printQuote, 3000);
 
 /***
  * click event listener for the print quote button
