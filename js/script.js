@@ -1,15 +1,9 @@
 /******************************************
-Treehouse FSJS Techdegree:
+Nermien barakat
 project 1 - A Random Quote Generator
 ******************************************/
 
-// For assistance: 
-// Check the "Project Resources" section of the project instructions
-// Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
-
-/*** 
- * `quotes` array 
-***/
+//`quotes` array 
 const quotes = [
   {
     quote: "Atheism is a non-prophet organization.",
@@ -20,9 +14,7 @@ const quotes = [
   },
   {
     quote: "Hapiness is not something ready made. It comes from your own actions.",
-    source: "Dalai Lama",
-    //citation: "Unknown",
-    year: "Unknown"
+    source: "Dalai Lama"
   },
   {
     quote: "So may the New Year be a happy one to you, happy to many more whose happiness depends on you!",
@@ -62,24 +54,20 @@ const quotes = [
 
 ];
 
-/***
- * Get Random Quote from qouates array
-***/
+//Get Random Quote from qouates array
+
 const getRandomQuote = () => {
   const randomQuote = quotes[Math.floor((Math.random() * quotes.length))];
   console.log(randomQuote);
   return randomQuote;
 }
-/***
- * Change background color function 
-***/
+//Change background color function 
+
 let bgColorChanges =()=> {
   var randomColor = Math.floor(Math.random()*16777215).toString(16);
   document.body.style.backgroundColor = "#"+randomColor;
 }
-/***
- * `printQuote` function
-***/
+// Display quote 
 
 const printQuote = () => {
   const randomQuote = getRandomQuote();
@@ -102,9 +90,7 @@ if(randomQuote.tag) {
 }
 
 /* Quote automatically refresh at regular intervals every 2 seconds*/
-//setInterval(printQuote, 3000);
-setInterval(printQuote
-,3000);
+setInterval(printQuote,3000);
 
 /***
  * click event listener for the print quote button
