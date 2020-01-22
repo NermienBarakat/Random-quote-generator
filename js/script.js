@@ -1,7 +1,7 @@
 /******************************************
 Nermien barakat
-Click down to review
-https://codepen.io/NermienBarakat/full/wvBRZxj
+Go to review
+<a href='https://codepen.io/NermienBarakat/full/wvBRZxj'>https://codepen.io/NermienBarakat/full/wvBRZxj</a>
 project 1 - A Random Quote Generator
 // I am going after Exceeds Expectations. Thank you 
 ******************************************/
