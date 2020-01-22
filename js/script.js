@@ -1,6 +1,6 @@
 /******************************************
 Nermien barakat
-Go to the link below review
+Click the link below to view on CodePen
 https://codepen.io/NermienBarakat/full/wvBRZxj
 project 1 - A Random Quote Generator
 // I am going after Exceeds Expectations. Thank you 
