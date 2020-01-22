@@ -64,12 +64,12 @@ const getRandomQuote = () => {
 }
 //Change background color function 
 
-let bgColorChanges = () => {
-  var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+const bgColorChanges = () => {
+  const randomColor = Math.floor(Math.random() * 16777215).toString(16);
   document.body.style.backgroundColor = "#" + randomColor;
 }
-// Display quote 
 
+// Display quote 
 const printQuote = () => {
   const randomQuote = getRandomQuote();
   let html = `
@@ -87,11 +87,17 @@ const printQuote = () => {
   }
   document.querySelector('.quote-box').innerHTML = '</p>' + html;
   bgColorChanges();
+
+  // reset timer
+  clearInterval(timer);
+  timer = setInterval(printQuote, timout);
+
   return html;
 }
 
 /* Quote automatically refresh at regular intervals every 10 seconds*/
-setInterval(printQuote, 10000);
+const timout = 10000;
+let timer = setInterval(printQuote, timout);
 
 /***
  * click event listener for the print quote button
